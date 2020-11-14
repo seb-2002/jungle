@@ -1,2 +1,9 @@
-<h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+<h1>Dashboard</h1>
+<div>
+<p>This many products in the database!</p>
+<p><%= @stats[:product_count] %></p>
+</div>
+<div>
+<p>This many categories in the database!</p>
+<p><%= @stats[:category_count] %></p>
+</div>
