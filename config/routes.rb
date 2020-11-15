@@ -7,6 +7,9 @@ Rails.application.routes.draw do
   resources :about, only: [:show] do
     root to: 'about#show'
   end
+  resources :users, only: [:new, :create]
+  resources :sessions, only: [:new, :create]
+  get '/logout' => 'sessions#destroy'
 
   resource :cart, only: [:show] do
     post   :add_item

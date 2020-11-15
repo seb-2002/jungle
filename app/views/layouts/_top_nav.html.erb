@@ -47,6 +47,13 @@
             <%= fa_icon "shopping-cart" %> My Cart (<%= cart.size %>)
           <% end %>
         </li>
+        <li>
+          <% if current_user %>
+             <%= link_to current_user[:email], '/logout', class: 'btn btn-sm btn-info', data: { confirm: "Are you sure?" } %>
+          <% else %>
+            <%= link_to 'register', new_user_path , class: 'btn btn-sm btn-info'%>
+          <% end %>
+        </li>
       </ul>
     </div>
   </div>
