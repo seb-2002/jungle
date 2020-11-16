@@ -4,6 +4,7 @@ ruby "2.5.3"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.11.3'
 
+gem 'rspec-rails', '~> 3.5'
 gem 'therubyracer'
 gem 'figaro'
 # Use postgresql as the database for Active Record
